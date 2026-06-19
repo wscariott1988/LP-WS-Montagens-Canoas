@@ -1,15 +1,5 @@
 (function () {
-  const header = document.querySelector('header');
-
-  window.addEventListener('scroll', function () {
-    if (window.scrollY > 100) {
-      header.style.borderBottom = '1px solid rgba(255,255,255,0.1)';
-    } else {
-      header.style.borderBottom = '1px solid rgba(255,255,255,0.06)';
-    }
-  });
-
-  const observer = new IntersectionObserver(function (entries) {
+  var observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
         entry.target.style.opacity = '1';
