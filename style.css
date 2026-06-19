@@ -87,11 +87,10 @@ header {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-}
-
-.logo-icon svg {
-  width: 18px;
-  height: 18px;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: 0.5px;
 }
 
 .logo-text {
@@ -620,11 +619,7 @@ h1 .highlight {
   .logo-icon {
     width: 36px;
     height: 36px;
-  }
-
-  .logo-icon svg {
-    width: 20px;
-    height: 20px;
+    font-size: 15px;
   }
 
   .logo-text {
