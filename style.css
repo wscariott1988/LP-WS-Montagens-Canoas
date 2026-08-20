@@ -658,8 +658,9 @@ h1 .highlight {
 }
 
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 14px;
 }
 
@@ -672,6 +673,8 @@ h1 .highlight {
   aspect-ratio: 1 / 1;
   background: var(--off-white);
   transition: all 0.3s;
+  flex: 0 0 calc(50% - 7px);
+  max-width: calc(50% - 7px);
 }
 
 .gallery-item img {
@@ -982,6 +985,11 @@ h1 .highlight {
   .gallery-grid {
     gap: 18px;
   }
+
+  .gallery-item {
+    flex: 0 0 calc(50% - 9px);
+    max-width: calc(50% - 9px);
+  }
 }
 
 /* ========== TABLET (min-width: 768px) ========== */
@@ -1050,8 +1058,12 @@ h1 .highlight {
   }
 
   .gallery-grid {
-    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+  }
+
+  .gallery-item {
+    flex: 0 0 calc(33.333% - 14px);
+    max-width: calc(33.333% - 14px);
   }
 }
 
