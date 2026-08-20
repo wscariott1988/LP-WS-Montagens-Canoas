@@ -9,10 +9,13 @@
   <!-- Open Graph -->
   <meta property="og:title" content="WS Montagens — Montador de Móveis em Canoas">
   <meta property="og:description" content="Mais de 9 anos de experiência em montagem de móveis em Canoas e Região Metropolitana. Profissionalismo, pontualidade e garantia de 90 dias.">
-  <meta property="og:image" content="http://wsmontagens.omontadordemoveis.com/Cart%C3%A3o%20WS%20Montagens.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:url" content="http://wsmontagens.omontadordemoveis.com">
+  <!-- A imagem OG usa o domínio final para o preview HTTPS no WhatsApp/redes.
+       Importante: rode "git add img && git commit && git push" e faça o deploy na Vercel
+       para a foto ficar acessível. -->
+  <meta property="og:image" content="https://www.wsmontagens.grupows.com/img/hero.webp">
+  <meta property="og:image:width" content="967">
+  <meta property="og:image:height" content="1200">
+  <meta property="og:url" content="https://www.wsmontagens.grupows.com">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="WS Montagens">
   <meta property="og:locale" content="pt_BR">
@@ -21,9 +24,32 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="WS Montagens — Montador de Móveis em Canoas">
   <meta name="twitter:description" content="Mais de 9 anos de experiência em montagem de móveis em Canoas e Região Metropolitana. Profissionalismo, pontualidade e garantia de 90 dias.">
-  <meta name="twitter:image" content="http://wsmontagens.omontadordemoveis.com/Cart%C3%A3o%20WS%20Montagens.png">
+  <meta name="twitter:image" content="https://www.wsmontagens.grupows.com/img/hero.webp">
 
   <title>WS Montagens — Montador de Móveis em Canoas</title>
+
+  <!-- Dados estruturados para o Google (estrelas no resultado de busca) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "WS Montagens",
+    "description": "Montador de móveis em Canoas e Região Metropolitana com mais de 9 anos de experiência. Montagem de móveis planejados, modulados e pré-fabricados, com garantia de 90 dias.",
+    "image": "https://www.wsmontagens.grupows.com/img/hero.webp",
+    "telephone": "+5551994784440",
+    "url": "https://www.wsmontagens.grupows.com",
+    "priceRange": "$$",
+    "areaServed": [
+      "Canoas", "Esteio", "Cachoeirinha", "Porto Alegre",
+      "São Leopoldo", "Novo Hamburgo", "Sapucaia do Sul",
+      "Gravataí", "Viamão", "Alvorada"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0"
+    }
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -38,32 +64,80 @@
         <div class="logo-icon">WS</div>
         <div class="logo-text">WS <span>Montagens</span></div>
       </div>
-      <a href="https://wa.me/5551994784440?text=Ol%C3%A1%2C%20te%20encontrei%20no%20Google%20e%20preciso%20de%20um%20or%C3%A7amento." class="btn-whatsapp-header" target="_blank" rel="noopener">
-        Orçamento via WhatsApp
-      </a>
+      <div class="header-actions">
+        <a href="tel:+5551994784440" class="btn-phone-header">📞 (51) 99478-4440</a>
+        <a href="https://wa.me/5551994784440?text=Ol%C3%A1%2C%20te%20encontrei%20no%20Google%20e%20preciso%20de%20um%20or%C3%A7amento." class="btn-whatsapp-header" target="_blank" rel="noopener">
+          Orçamento via WhatsApp
+        </a>
+      </div>
     </div>
   </header>
 
   <!-- HERO -->
   <section class="hero" id="hero">
     <div class="container">
-      <div class="hero-content">
-        <div class="hero-badges">
-          <div class="hero-badge">★★★★★ 5.0 no Google</div>
-          <div class="hero-badge">🛡️ Garantia de 90 dias</div>
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badges">
+            <div class="hero-badge">★★★★★ 5.0 no Google</div>
+            <div class="hero-badge">🛡️ Garantia de 90 dias</div>
+          </div>
+          <h1>
+            <span class="highlight-brand">WS Montagens</span>
+            Montador de Móveis em <span class="highlight">Canoas</span> e Região Metropolitana
+          </h1>
+          <p class="hero-subtitle">
+            Mais de 9 anos de experiência em <strong>montagem de móveis</strong> — incluindo planejados, modulados e pré-fabricados.
+            Serviço profissional com capricho, pontualidade e ferramentas próprias. Você não precisa fornecer nada.
+          </p>
+          <a href="https://wa.me/5551994784440?text=Ol%C3%A1%2C%20te%20encontrei%20no%20Google%20e%20preciso%20de%20um%20or%C3%A7amento." class="btn" target="_blank" rel="noopener">
+            Solicitar Orçamento Grátis
+          </a>
+          <p class="hero-info">✅ Resposta rápida no WhatsApp</p>
         </div>
-        <h1>
-          <span class="highlight-brand">WS Montagens</span>
-          Montador de Móveis em <span class="highlight">Canoas</span> e Região Metropolitana
-        </h1>
-        <p class="hero-subtitle">
-          Mais de 9 anos de experiência em <strong>montagem de móveis</strong> — incluindo planejados, modulados e pré-fabricados.
-          Serviço profissional com capricho, pontualidade e ferramentas próprias. Você não precisa fornecer nada.
-        </p>
+        <div class="hero-media">
+          <img src="img/hero.webp" alt="Montador profissional da WS Montagens finalizando a montagem de móveis" class="hero-img" width="967" height="1200" fetchpriority="high" decoding="async">
+          <div class="hero-media-badge">
+            <span class="hero-media-badge-stars">★★★★★</span>
+            <span>Mais de 9 anos de experiência</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="section como-funciona" id="como-funciona">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Como Funciona</span>
+        <h2 class="section-title">Do orçamento à montagem em 3 passos</h2>
+        <p class="section-desc">Simples e sem burocracia. Você chama, eu orço e executo com garantia.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-icon">💬</div>
+          <h3>Chame no WhatsApp</h3>
+          <p>Envie uma mensagem contando o que precisa. Mande fotos ou medidas se quiser agilizar.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-icon">📋</div>
+          <h3>Receba o orçamento</h3>
+          <p>Combino valor e horário sem compromisso. Resposta rápida e sem visita burocrática.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-icon">🔧</div>
+          <h3>Montagem com garantia</h3>
+          <p>Executo o serviço com capricho e limpeza, com garantia de 90 dias no que foi feito.</p>
+        </div>
+      </div>
+      <div class="section-cta">
         <a href="https://wa.me/5551994784440?text=Ol%C3%A1%2C%20te%20encontrei%20no%20Google%20e%20preciso%20de%20um%20or%C3%A7amento." class="btn" target="_blank" rel="noopener">
-          Solicitar Orçamento Grátis
+          Começar agora no WhatsApp
         </a>
-        <p class="hero-info">✅ Resposta rápida no WhatsApp</p>
       </div>
     </div>
   </section>
@@ -75,6 +149,10 @@
         <span class="section-tag">Avaliações</span>
         <h2 class="section-title">O que nossos clientes dizem</h2>
         <p class="section-desc">★★★★★ 5.0 — Avaliações 100% positivas no Google.</p>
+        <!-- TODO: substitua o link abaixo pelo link real do seu perfil no Google Meu Negócio -->
+        <a href="https://www.google.com/maps/search/WS+Montagens+Canoas" class="google-rating-link" target="_blank" rel="noopener">
+          <span class="google-g">G</span> Veja todas as avaliações no Google
+        </a>
       </div>
       <div class="reviews-grid">
         <div class="review-card">
@@ -224,6 +302,29 @@
     </div>
   </section>
 
+  <!-- NOSSOS TRABALHOS -->
+  <section class="section trabalhos" id="trabalhos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nossos Trabalhos</span>
+        <h2 class="section-title">Capricho que se vê</h2>
+        <p class="section-desc">Resultados reais de montagens entregues com qualidade e acabamento.</p>
+      </div>
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- 📸 ADICIONE MAIS FOTOS AQUI: copie o bloco <figure> abaixo em img/trabalhos e
+             troque o src. A galeria e o zoom (lightbox) funcionam automaticamente. -->
+        <figure class="gallery-item" data-caption="Montagem concluída — WS Montagens">
+          <img src="img/hero.webp" alt="Resultado de montagem de móveis da WS Montagens" loading="lazy" decoding="async">
+        </figure>
+      </div>
+      <div class="section-cta">
+        <a href="https://wa.me/5551994784440?text=Ol%C3%A1%2C%20te%20encontrei%20no%20Google%20e%20preciso%20de%20um%20or%C3%A7amento." class="btn" target="_blank" rel="noopener">
+          Quero um serviço assim no WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- ÁREA DE ATENDIMENTO -->
   <section class="section area" id="area">
     <div class="container">
@@ -252,6 +353,73 @@
     </div>
   </section>
 
+  <!-- PERGUNTAS FREQUENTES -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Dúvidas Frequentes</span>
+        <h2 class="section-title">Perguntas e respostas</h2>
+        <p class="section-desc">As principais dúvidas antes de contratar. Não achou a sua? Chame no WhatsApp.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Quanto custa a montagem de móveis?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>O valor varia conforme o tipo, a quantidade e a complexidade dos móveis. Chame no WhatsApp com fotos ou medidas que te passo um orçamento rápido e sem compromisso.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Preciso fornecer ferramentas ou material?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Não. Vou com todas as ferramentas profissionais próprias — furadeira, parafusadeira, serra circular, tico-tico, lixadeira e nível a laser. Você não precisa fornecer nada.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Quais regiões vocês atendem?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Atendo em Canoas e em toda a região metropolitana: Esteio, Cachoeirinha, Porto Alegre, São Leopoldo, Novo Hamburgo, Sapucaia do Sul, Gravataí, Viamão e Alvorada.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Qual o prazo para atendimento?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Normalmente consigo atender em poucos dias, dependendo da agenda. Chame no WhatsApp para verificar os horários disponíveis mais próximos.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>O serviço tem garantia?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sim. Toda montagem tem garantia de 90 dias. Se precisar de qualquer ajuste pós-montagem, é só acionar que eu retorno para resolver.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Vocês fazem desmontagem e remontagem para mudança?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sim. Desmontamos, transportamos e remontamos os móveis no novo endereço, com identificação das peças e embalagem de ferragens para não perder nada.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA FINAL -->
   <section class="cta-final" id="contato">
     <div class="container">
@@ -261,6 +429,7 @@
       <a href="https://wa.me/5551994784440?text=Ol%C3%A1%2C%20te%20encontrei%20no%20Google%20e%20preciso%20de%20um%20or%C3%A7amento." class="btn btn--white" target="_blank" rel="noopener">
         Fale pelo WhatsApp
       </a>
+      <a href="tel:+5551994784440" class="cta-phone">ou ligue: (51) 99478-4440</a>
     </div>
   </section>
 
